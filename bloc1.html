@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Blog - Apprendre à Créer un Site Web Responsive</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 2rem;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #0073e6;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      pre {
+        background-color: #f4f4f4;
+        padding: 1rem;
+        overflow: auto;
+        border-left: 3px solid #0073e6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Apprendre à Créer un Site Web Responsive</h1>
+      <p>Par <strong>Ton Nom</strong></p>
+      <p>Date : 24 juillet 2024</p>
+      <img src="responsive-design.jpg" alt="Responsive Design" />
+      <p>
+        Dans cet article, je vais partager avec vous comment j'ai appris à créer
+        un site web responsive. Un site web responsive est un site qui s'adapte
+        à différentes tailles d'écran, offrant une expérience utilisateur
+        optimale sur les ordinateurs de bureau, les tablettes et les
+        smartphones.
+      </p>
+
+      <h2>Qu'est-ce qu'un Design Responsive ?</h2>
+      <p>
+        Un design responsive utilise des techniques CSS pour ajuster la mise en
+        page du site web en fonction de la taille de l'écran. Cela signifie que
+        les éléments de la page, tels que les images, les textes et les menus,
+        se redimensionnent et se réorganisent automatiquement pour s'adapter à
+        l'espace disponible.
+      </p>
+
+      <h2>Les Techniques Clés pour un Design Responsive</h2>
+      <h3>1. Utiliser des Media Queries</h3>
+      <p>
+        Les media queries sont des règles CSS qui s'appliquent uniquement
+        lorsque certaines conditions sont remplies, comme la largeur de l'écran.
+        Voici un exemple de media query :
+      </p>
+      <pre>
+            <code>
+                @media (max-width: 600px) {
+                    nav a {
+                        float: none;
+                        width: 100%;
+                        text-align: left;
+                        padding-left: 1rem;
+                    }
+                }
+            </code>
+        </pre>
+
+      <h3>2. Fluid Grids</h3>
+      <p>
+        Les grilles fluides utilisent des pourcentages au lieu de pixels pour
+        définir les largeurs des éléments. Cela permet aux éléments de s'ajuster
+        dynamiquement en fonction de la taille de l'écran.
+      </p>
+
+      <h3>3. Images Flexibles</h3>
+      <p>
+        Les images doivent également être flexibles pour s'adapter à différentes
+        tailles d'écran. Utilisez la propriété CSS
+        <code>max-width: 100%;</code> pour garantir que les images ne dépassent
+        pas la largeur de leur conteneur :
+      </p>
+      <pre>
+            <code>
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            </code>
+        </pre>
+
+      <h2>Conclusion</h2>
+      <p>
+        Apprendre à créer un site web responsive est essentiel pour tout
+        développeur web. Cela permet de garantir que votre site offre une
+        expérience utilisateur optimale, quel que soit l'appareil utilisé pour
+        le consulter. J'espère que cet article vous a été utile et vous a donné
+        une meilleure compréhension des concepts de base du design responsive.
+      </p>
+      <p>
+        N'hésitez pas à laisser des commentaires ci-dessous si vous avez des
+        questions ou des suggestions !
+      </p>
+    </div>
+  </body>
+</html>
